@@ -1,4 +1,3 @@
-
 /**
  * New Quiz Engine - All Questions at Once
  * Expects global CHAPTERS array from questions.js
