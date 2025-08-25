@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Hub</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="Free, responsive notes and quiz portal for SEBA & CBSE students.">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>Study Hub</h1>
+      </div>
+      <nav class="nav">
+        <a class="button secondary" href="seba/notes.html">SEBA Notes</a>
+        <a class="button" href="seba/quiz.html">SEBA Quizzes</a>
+        <a class="button secondary" href="cbse/notes.html">CBSE Notes</a>
+        <a class="button" href="cbse/quiz.html">CBSE Quizzes</a>
+      </nav>
+    </header>
+    <section class="hero card">
+      <div class="hero-text">
+        <span class="tag">Free & Offline Ready</span>
+        <h2>Your one-page portal for notes & chapter quizzes</h2>
+        <p>Pick your board to get started.</p>
+        <div class="hero-actions">
+          <a class="big-link" href="seba/notes.html">SEBA Students</a>
+          <a class="big-link" href="cbse/notes.html">CBSE Students</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>What you get</h3>
+        <ul>
+          <li>Clean notes – easy to edit directly in HTML</li>
+          <li>Chapter-wise quizzes: MCQ, True/False, Short answers</li>
+          <li>Instant scoring – no logins, no backend</li>
+          <li>Static hosting ready: GitHub Pages / Netlify</li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <hr>
+      <div>© <span id="year"></span> Study Hub · Built with pure HTML/CSS/JS</div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

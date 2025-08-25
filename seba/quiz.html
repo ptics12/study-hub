@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEBA Quizzes</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>SEBA Quizzes</h1>
+      </div>
+      <nav class="nav">
+        <a class="button secondary" href="../index.html">Home</a>
+        <a class="button" href="notes.html">Notes</a>
+      </nav>
+    </header>
+
+    <div class="card" id="chapters-card">
+      <div class="tag">Pick a chapter</div>
+      <h3>Available Quizzes</h3>
+      <div id="chapter-list" class="chapter-grid"></div>
+    </div>
+
+    <div class="card" id="quiz-box">
+      <div class="tag">Quiz</div>
+      <h3 id="quiz-title">Chapter Title</h3>
+      <div id="quiz-meta" style="margin-bottom:10px"></div>
+      <hr>
+      <div id="progress" class="badge">Question 1</div>
+      <p id="question" style="font-weight:600; font-size:18px"></p>
+      <div id="answer-area" style="margin:10px 0 14px"></div>
+      <div class="hero-actions">
+        <button class="button secondary" id="prev-btn">Previous</button>
+        <button class="button" id="next-btn">Next</button>
+      </div>
+    </div>
+
+    <div class="card" id="result-box" style="display:none">
+      <div class="tag">Result</div>
+      <h3 id="result-title">Score</h3>
+      <div id="result-detail"></div>
+    </div>
+
+    <footer class="footer">
+      <hr>
+      <div>Edit <code>questions.js</code> to add/update quizzes.</div>
+    </footer>
+  </div>
+
+  <script src="../assets/quiz.js"></script>
+  <script src="questions.js"></script>
+</body>
+</html>
